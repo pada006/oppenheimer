@@ -1,0 +1,30 @@
+{
+	"folders": [
+		{
+			"path": "cucumber"
+		}
+	],
+	"settings": {
+		"git.ignoreLimitWarning": true,
+		"cucumberautocomplete.steps": [
+			"src/steps/given.js",
+			"src/steps/then.js",
+			"src/steps/when.js"
+		],
+		"cucumberautocomplete.syncfeatures": "features",
+		"cucumberautocomplete.strictGherkinCompletion": true,
+		"cucumberautocomplete.smartSnippets": true,
+		"cucumberautocomplete.stepsInvariants": true,
+		"cucumberautocomplete.customParameters": [
+			{
+				"parameter": "{ab}",
+				"value": "(a|b)"
+			}
+		],
+		"cucumberautocomplete.pages": {
+			"pages": "features/**.js"
+		},
+		"cucumberautocomplete.skipDocStringsFormat": true,
+		"cucumberautocomplete.onTypeFormat": true
+	}
+}
