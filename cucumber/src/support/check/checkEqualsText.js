@@ -44,7 +44,9 @@ export default (elementType, selector, falseCase, expectedText) => {
         boolFalseCase = true;
     }
 
-    const text = browser[command](selector);
+    const elem = $(selector);
+    elem.waitForDisplayed();
+    const text = elem[command]();
 
     if (boolFalseCase) {
         expect(parsedExpectedText).not.toBe(text);
