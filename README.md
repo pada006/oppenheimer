@@ -1,27 +1,33 @@
 # oppenheimer
 The Project Oppeheimer test
 
-------
-WebDriver IO framework setup
-- Install node.js 8 or above
-- install yarn
-- clone project directory from github https://github.com/pada006/oppenheimer
-- install yarn for windows
-- Use VS code and run "npm install yarn"
-- run "yarn install" in cucumber folder using windows terminal
+Refer to the Testing strategy.xlsx in "Test Files" folder for project test scenarios
 
-note: to run a single feature file test
+------
+(1)
+WebDriver IO framework setup (For UI functionality tests)
+
+- Install node.js 8 or above
+- Clone project directory from github https://github.com/pada006/oppenheimer
+- Install yarn for windows
+- Use VS code and run "npm install yarn"
+- Run "yarn install" from the "cucumber" folder using windows command prompt
+
+note: to run the oppenheimer test feature file test from the project directory
 npx wdio wdio.conf.js --spec ./src/features/oppenheimerTest.feature
 
-
 ---
+(2)
+To setup API test framework (For API functionality tests)
 
-To setup API test framework
-- install SoapUI open source
-- import the Oppenheimer-project-soapui-project.xml file
+- Install SoapUI open source
+- Import the Oppenheimer-project-soapui-project.xml file
+- Now you are able to run the test scenarios at Oppenheimer project/oppenheimer test
 
 ----
-To run the API server
+(3)
+To run the Project API server and webpage
+
 https://github.com/auronsiow/oppenheimer-project-dev
 1. Download and clone this repository to your desktop. You may also choose to download the jar OppenheimerProjectDev.jar
 2. To run the application, issue the following to your terminal. Replace {path-to-this-jar} with your actual path to the folder containing the jar
