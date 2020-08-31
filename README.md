@@ -11,9 +11,9 @@ WebDriver IO framework setup (For UI functionality tests)
 - Clone project directory from github https://github.com/pada006/oppenheimer
 - Install yarn for windows
 - Use VS code and run "npm install yarn"
-- Run "yarn install" from the "cucumber" folder using windows command prompt
+- Run "yarn install" from the "cucumber" folder using windows command prompt	
 
-note: to run the oppenheimer test feature file test from the project directory
+note: to run the oppenheimer test feature file test from the cucumber directory
 npx wdio wdio.conf.js --spec ./src/features/oppenheimerTest.feature
 
 ---
